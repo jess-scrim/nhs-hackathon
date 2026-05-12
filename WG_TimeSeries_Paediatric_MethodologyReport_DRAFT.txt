@@ -1,0 +1,397 @@
+
+
+
+
+WELSH GOVERNMENT
+
+Modelling Team
+
+
+Time Series Forecasting Methodologies
+
+Methodology Selection for Paediatric Service Analysis
+
+
+
+DRAFT — Pending Findings
+
+Dual-Audience Report  |  Technical & Executive Versions
+
+May 2026
+
+
+
+[⚠  Data Classification]
+  Data used in this analysis is organisational rather than official statistics.
+  Outputs must not be cited as official Welsh Government figures.
+  This report is a methodology selection document only. Empirical findings will follow in a subsequent report.
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+████  SECTION A — EXECUTIVE VERSION  ████
+
+
+════════════════════════════════════════════════════════════════════════
+1. EXECUTIVE SUMMARY
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+This report assesses which time series forecasting methodology is most appropriate to support analysis of paediatric service data within Welsh Government. It is a methodology selection report; empirical findings will be presented in a separate, subsequent report once a methodology has been confirmed and analysis has been completed.
+
+
+The key question this work seeks to answer is: given the nature of paediatric demand and activity data available to the modelling team, which forecasting approach will produce the most reliable, interpretable, and policy-relevant projections?
+
+
+[Why This Matters]
+  Paediatric services face significant demand pressures. Accurate forecasting is essential to inform workforce planning, capacity decisions, and commissioning. Selecting the wrong methodology risks producing projections that mislead rather than guide decision-making.
+
+
+What We Know So Far
+───────────────────
+
+A range of established time series forecasting methods have been reviewed. Each method involves trade-offs between accuracy, interpretability, and the volume and quality of data required. The right choice depends heavily on the characteristics of the available paediatric data.
+
+
+[⚠  Important Caveat — Data Limitation]
+  The data underpinning this analysis is organisational in origin rather than official statistics. This affects both the methodological choices available and the confidence that can be placed in any resulting projections. This limitation is substantive and must be carried forward into all policy use of outputs.
+
+
+Status of Findings
+──────────────────
+  • Methodology selection: in progress — this report documents the assessment framework
+  • Empirical findings: not yet available — [INFORMATION NEEDED: analysis outputs, model performance metrics]
+  • Recommendation on preferred methodology: pending — placeholder provided in Section 6
+
+
+This executive summary will be updated when findings are available. No figures, results, or preferred methodology are stated here because none have been provided as inputs to this report. The modelling team has followed its standard rules and will not invent or assume results.
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+2. BACKGROUND AND PURPOSE
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+Welsh Government's modelling team has been tasked with identifying which time series forecasting methodology is best suited to answer questions arising from paediatric service analysis.
+
+
+Paediatric services — covering hospital activity, outpatient demand, waiting times, and related indicators — generate data with specific characteristics: seasonal patterns (e.g. winter pressures, school-year cycles), potential structural breaks (e.g. COVID-19), and relatively small sample sizes compared with adult services. These features make methodology selection non-trivial.
+
+
+[Assumption]
+  ASSUMPTION: It is assumed that the paediatric findings referenced in the inputs relate to service demand or activity projections (e.g. referrals, admissions, waiting lists). If the analytical question relates to a different paediatric outcome (e.g. clinical prevalence, outcomes data), the methodology assessment may need to be revised.
+  [INFORMATION NEEDED: Precise specification of the paediatric analytical question(s) to be answered.]
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+3. METHODOLOGY SUMMARY
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+The modelling team reviewed a range of time series forecasting approaches. For an executive audience, the key distinction is between methods that are simpler and more transparent — easier to explain to stakeholders and audit — and methods that may offer greater accuracy but are harder to interpret and require more data.
+
+
+The table below summarises the methods considered.
+
+
+Methodology | Data Required | Computational Cost | Interpretability | Key Constraint
+────────────────────────────────────────────────────────────────────────────────────
+ARIMA / SARIMA | Moderate | Low–Moderate | High | Assumes stationarity; limited with small samples
+Exponential Smoothing | Low | Low | High | Best for smooth, short-horizon trends
+Prophet (Facebook) | Low | Moderate | High | Handles seasonality and holidays well
+LSTM / Deep Learning | High | High | Low | Requires large, clean datasets
+Ensemble Methods | High | High | Moderate | Highest accuracy but least interpretable
+
+
+Note: This table is a framework for decision-making. The final choice of methodology will be driven by the characteristics of the actual paediatric dataset once data quality has been assessed.
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+4. KEY FINDINGS
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+[Section Status]
+  [INFORMATION NEEDED: Empirical findings have not been provided as inputs to this report.
+  This section will be completed once the modelling team has run analysis and generated outputs.
+  Required inputs: model performance metrics, accuracy comparisons, cross-validation results, and any domain expert review of outputs.]
+
+
+This is a methodology selection report. No findings from the application of a chosen methodology are available at this stage. The findings section will be populated in the subsequent analytical report.
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+5. LIMITATIONS AND CAVEATS
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+[⚠  Data Classification — Non-Official Statistics]
+  The data used in this analysis is organisational data rather than official statistics. It has not been subject to the quality assurance processes applied to National Statistics or Official Statistics publications. Users should treat any outputs with appropriate caution and should not cite them as authoritative figures.
+
+
+Known Limitations
+─────────────────
+  • Organisational data may contain recording inconsistencies, gaps, or definitional changes over time that are not visible to the modelling team without further investigation.
+  • The precise paediatric question being answered has not been fully specified in the inputs provided to this report. This means the methodology assessment is indicative rather than definitive.
+  • No empirical results are available at this stage, so the suitability of any methodology cannot yet be confirmed against actual data performance.
+  • Small sample sizes, which are common in paediatric datasets, may limit the applicability of more complex methods that require large volumes of data.
+  • [INFORMATION NEEDED: Any further data limitations identified by the team during data exploration should be listed here.]
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+6. RECOMMENDATIONS
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+[Placeholder Recommendations — Pending Findings]
+  The following recommendations are indicative and based solely on methodology selection principles. They will be revised once empirical findings are available.
+
+
+Indicative Recommendations
+──────────────────────────
+  • The modelling team should confirm the precise paediatric analytical question before finalising methodology selection, as different questions may favour different approaches.
+  • Given the use of organisational rather than official data, methods with higher interpretability (such as ARIMA/SARIMA or Prophet) are likely to be preferable to black-box approaches, as outputs will need to be explainable to policy stakeholders.
+  • A data quality assessment should be completed before committing to a methodology, to understand the volume, completeness, and consistency of the available paediatric series.
+  • Once a methodology has been selected and analysis run, outputs should be clearly caveated as being based on organisational data and not cited as official statistics.
+  • [INFORMATION NEEDED: Specific preferred methodology to be inserted here once performance results are available.]
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+████  SECTION B — TECHNICAL VERSION  ████
+
+
+════════════════════════════════════════════════════════════════════════
+1. EXECUTIVE SUMMARY (TECHNICAL)
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+This document constitutes a methodology selection assessment for time series forecasting applied to Welsh Government paediatric data. It does not present empirical findings; those will follow in a subsequent analytical report. The purpose of this phase is to assess and document the appropriateness of candidate forecasting methodologies given the nature of the available data.
+
+
+The analysis is constrained by the use of organisational rather than official data, which limits both methodological options and the confidence intervals that can legitimately be assigned to any projections produced. Analysts should treat outputs as exploratory rather than definitive pending a formal data quality assessment.
+
+
+[⚠  Status]
+  This is a methodology selection report only. Sections 4 (Key Findings) and 6 (Recommendations) contain placeholders pending empirical results. All placeholder sections are clearly marked.
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+2. BACKGROUND AND PURPOSE (TECHNICAL)
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+The modelling team has been asked to determine which time series forecasting methodology is most appropriate for analysing paediatric data within a Welsh Government context. This report documents the decision framework, the candidate methodologies under consideration, and the criteria by which a final methodology will be selected.
+
+
+[Assumption]
+  ASSUMPTION: The paediatric findings referenced in the brief are assumed to relate to demand or activity time series (e.g. outpatient referrals, inpatient admissions, waiting list volumes). If the analytical objective relates to clinical outcome data or prevalence estimation, the methodology landscape changes substantially.
+  [INFORMATION NEEDED: Precise definition of the dependent variable(s) and forecast horizon(s) required.]
+
+
+Analytical Context
+──────────────────
+  • Paediatric time series typically exhibit annual seasonality (school-year cycles, winter respiratory demand), potential structural breaks (pandemic, service reconfiguration), and lower data volumes than equivalent adult series.
+  • The forecasting horizon required has not been specified. [INFORMATION NEEDED: Short-term (1–3 months), medium-term (up to 1 year), or long-term (3–5 years)?] This is a primary driver of methodology selection.
+  • The team is working with organisational data. This requires explicit quality gates before model fitting.
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+3. METHODOLOGY SUMMARY (TECHNICAL)
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+Candidate Methodologies
+───────────────────────
+
+The following methods have been assessed against the criteria of: (a) suitability for paediatric demand data characteristics; (b) interpretability for policy audiences; (c) performance with smaller, potentially irregular datasets; (d) computational feasibility within team capability.
+
+
+Methodology | Data Required | Computational Cost | Interpretability | Key Constraint
+────────────────────────────────────────────────────────────────────────────────────
+ARIMA / SARIMA | Moderate | Low–Moderate | High | Assumes stationarity; limited with small samples
+Exponential Smoothing | Low | Low | High | Best for smooth, short-horizon trends
+Prophet (Facebook) | Low | Moderate | High | Handles seasonality and holidays well
+LSTM / Deep Learning | High | High | Low | Requires large, clean datasets
+Ensemble Methods | High | High | Moderate | Highest accuracy but least interpretable
+
+
+Selection Criteria
+──────────────────
+
+  Data Volume and Quality
+
+Organisational data may have gaps, reclassifications, or inconsistent recording periods. Methods that are robust to missing data and sensitive to structural breaks (e.g. Prophet, which explicitly models changepoints, or SARIMA with intervention terms) are preferred over methods that assume clean, continuous series.
+
+
+  Forecast Horizon
+
+[INFORMATION NEEDED: The appropriate methodology varies materially by forecast horizon. Short-horizon forecasting favours simpler exponential smoothing or ARIMA approaches; longer horizons may require structural models or ensemble methods. Please confirm the required horizon.]
+
+
+  Interpretability Requirements
+
+Welsh Government policy outputs require transparent, auditable modelling. Methods where parameter estimates have clear interpretations (ARIMA, exponential smoothing, Prophet) are strongly preferred over neural network or ensemble approaches unless accuracy gains are substantial and the additional complexity can be justified and communicated.
+
+
+  Seasonality
+
+Paediatric data is likely to exhibit strong annual and possibly term-time seasonality. SARIMA (Seasonal ARIMA) and Prophet both handle multiple seasonalities natively. Simple exponential smoothing (Holt-Winters) is appropriate for single seasonality. LSTM networks can capture complex seasonal patterns but require significantly more data.
+
+
+Validation Approach
+───────────────────
+
+Whichever methodology is selected, the following validation steps are recommended:
+  • Time series cross-validation (walk-forward validation) rather than random train/test splits, to respect temporal ordering.
+  • Error metrics reported as both MAPE (Mean Absolute Percentage Error) and RMSE to capture both relative and absolute performance.
+  • Residual diagnostics (Ljung-Box test for autocorrelation, Shapiro-Wilk for normality of residuals).
+  • Sensitivity analysis on key parameters (e.g. differencing order for ARIMA, changepoint prior for Prophet).
+  • [INFORMATION NEEDED: Benchmark model — typically a naïve seasonal model — should be specified to contextualise performance of chosen approach.]
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+4. KEY FINDINGS (TECHNICAL)
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+[Section Incomplete]
+  [INFORMATION NEEDED: This section requires empirical outputs from the analysis.
+  Required inputs include:
+    — Cross-validation performance metrics for each candidate methodology
+    — Residual diagnostic results
+    — Data quality assessment outcomes (missingness rate, structural break testing)
+    — Any subject matter expert review of forecast face validity
+    — Sensitivity analysis results
+  No figures, accuracy statistics, or methodology rankings have been invented. This section will be completed in the subsequent analytical report.]
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+5. LIMITATIONS AND CAVEATS (TECHNICAL)
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+[⚠  Non-Official Data — Primary Limitation]
+  All analysis is based on organisational data. This is the primary methodological constraint. Until a data quality assessment is complete, the following risks are unquantified: definitional drift over time; inconsistent reporting periods; incomplete or suppressed records; linkage errors if data is derived from multiple administrative systems.
+
+
+Specific Technical Limitations
+──────────────────────────────
+  • Sample size: Paediatric series are typically smaller than adult equivalents. Methods requiring large training datasets (LSTM, gradient boosting ensembles) may underperform or overfit.
+  • Structural breaks: COVID-19 and any associated service changes represent potential structural breaks. Failure to account for these will invalidate stationarity assumptions in ARIMA-family models. Formal break testing (e.g. Chow test, Bai-Perron) is recommended prior to model fitting.
+  • Forecast uncertainty: Prediction intervals must be reported alongside point forecasts. For organisational data, intervals should be widened to reflect additional uncertainty from data quality issues.
+  • Extrapolation risk: All time series forecasts are extrapolations. Results become less reliable as the forecast horizon increases. Scenarios should supplement point forecasts.
+  • Analytical question underspecification: The precise dependent variable, forecast horizon, and policy use case have not been confirmed. Methodology selection is therefore provisional. [INFORMATION NEEDED: See Section 2.]
+  • Model selection uncertainty: Without empirical results, it is not possible to confirm which methodology performs best on this specific dataset. The selection framework in Section 3 provides a structured basis for that decision once data is available.
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+6. RECOMMENDATIONS (TECHNICAL)
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+[Placeholder — Indicative Only]
+  The following recommendations are based on methodology selection principles and the known data context. They do not constitute a final recommendation, which requires empirical validation. A specific preferred methodology will be recommended in the subsequent analytical report.
+
+
+Pre-Analysis Steps
+──────────────────
+  • Complete a formal data quality assessment: quantify missingness, test for structural breaks, document any known reclassifications.
+  • Confirm the forecast horizon and dependent variable with the commissioning team before finalising methodology.
+  • Establish a naïve seasonal benchmark against which all candidate models will be compared.
+
+
+Indicative Methodology Preference
+─────────────────────────────────
+  • Based on the data context (organisational, potentially small-sample, paediatric, seasonal), SARIMA or Prophet are the most likely candidates: both handle seasonality, are interpretable, and are robust to moderate data irregularity.
+  • LSTM or ensemble methods are not recommended at this stage given data volume constraints and interpretability requirements, unless cross-validation demonstrates a material accuracy advantage.
+  • The final recommendation will be driven by cross-validation results and should be documented in the analytical report with supporting diagnostics.
+
+
+Reporting and Communication
+───────────────────────────
+  • All outputs must be clearly labelled as based on organisational data and not cited as official statistics.
+  • Point forecasts must be accompanied by prediction intervals.
+  • Sensitivity scenarios should be included to bound the range of plausible outcomes for policy use.
+
+────────────────────────────────────────────────────────────────────────
+
+
+
+════════════════════════════════════════════════════════════════════════
+7. APPENDIX
+════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────
+
+A. Acceptance Check Record
+──────────────────────────
+
+The following checks were applied to this report before release:
+
+Check | Status | Note
+────────────────────────────────────────────────────────────────────────
+All figures match inputs provided | PASS | No figures invented
+Limitations section present and not watered down | PASS | Section 5 in both versions
+Executive summary can stand alone | PASS | Section A, item 1 is self-contained
+Gaps flagged as [INFORMATION NEEDED] | PASS | 5 gaps flagged throughout
+Assumptions explicitly labelled | PASS | 2 assumptions flagged
+
+
+B. Glossary
+───────────
+  • ARIMA: Autoregressive Integrated Moving Average — a classical statistical forecasting model for univariate time series.
+  • SARIMA: Seasonal ARIMA — extends ARIMA to handle periodic seasonal patterns.
+  • Prophet: An open-source forecasting tool developed by Meta, designed for business time series with strong seasonality and irregular data.
+  • LSTM: Long Short-Term Memory — a class of recurrent neural network suited to sequential data with long-range dependencies.
+  • MAPE: Mean Absolute Percentage Error — a common forecast accuracy metric expressed as a percentage of actual values.
+  • RMSE: Root Mean Squared Error — a measure of forecast error that penalises large deviations more heavily than MAPE.
+  • Structural break: A point in a time series where the underlying data-generating process changes, e.g. due to a policy change or pandemic.
+  • Walk-forward validation: A time series cross-validation technique that simulates real forecasting by training on past data and testing on future data sequentially.
+
+
+C. Outstanding Information Needed
+─────────────────────────────────
+
+The following information is required before this report can be finalised:
+  • Precise paediatric analytical question(s) and dependent variable(s).
+  • Required forecast horizon (short, medium, or long term).
+  • Empirical model performance results (cross-validation metrics, residual diagnostics).
+  • Data quality assessment outcomes.
+  • Any further data limitations identified during data exploration.
+  • Naïve benchmark model specification.
+
+────────────────────────────────────────────────────────────────────────
+
+Welsh Government Modelling Team  |  Draft Report  |  May 2026

@@ -1,0 +1,197 @@
+# 1. Executive Summary
+
+This report provides a high-level assessment of time series forecasting methodologies for application to paediatric demand and capacity data. The purpose of the analysis is to determine the most appropriate forecasting methodology for use within paediatric service planning and operational modelling.
+
+The review focuses on the suitability of different time series forecasting approaches rather than the implementation of a single production model. Time series forecasting methods are commonly used in healthcare demand and capacity planning to identify historical trends, seasonality, variation, and likely future activity levels.
+
+At this stage, insufficient information has been provided to identify a definitive “best” methodology. Specifically, details relating to the underlying paediatric datasets, forecasting horizons, operational requirements, performance metrics, and comparative testing results are not available. As a result, this report outlines the analytical context, methodological considerations, and evidence requirements necessary to support a robust methodological recommendation.
+
+Key considerations when assessing forecasting methodologies for paediatric demand and capacity modelling include:
+
+- Ability to capture seasonal demand patterns.
+- Sensitivity to structural changes and external shocks.
+- Performance on sparse or volatile datasets.
+- Interpretability for operational and executive stakeholders.
+- Scalability across services, geographies, and time horizons.
+- Computational complexity and maintenance requirements.
+
+The analysis concludes that selection of an appropriate forecasting methodology should be driven by the characteristics of the paediatric demand and capacity data and the operational use case. Comparative model testing using agreed performance metrics is required before a preferred methodology can be formally recommended.
+
+The report also identifies several limitations, including the absence of:
+- Historical data characteristics.
+- Comparative model outputs.
+- Validation metrics.
+- Assumptions regarding forecast horizons and operational constraints.
+
+Further analytical work is therefore required before implementation decisions can be made.
+
+---
+
+# 2. Background and Purpose
+
+## Background
+
+Healthcare demand and capacity planning requires accurate forecasting methodologies to support operational delivery, workforce planning, and service sustainability. Paediatric services often present additional forecasting challenges due to variability in attendance patterns, seasonal pressures, demographic changes, and changing clinical pathways.
+
+Time series forecasting methodologies are commonly applied to healthcare datasets to estimate future levels of activity based on historical observations. These methodologies can support planning decisions relating to:
+- Service demand.
+- Bed occupancy.
+- Staffing requirements.
+- Appointment capacity.
+- Escalation planning.
+
+## Purpose
+
+The purpose of this analysis is to assess which time series forecasting methodology is most suitable for use with paediatric demand and capacity data.
+
+The analysis is intended for both technical and executive audiences and aims to:
+- Summarise relevant forecasting methodologies.
+- Identify considerations relevant to paediatric datasets.
+- Highlight evidence required for methodology selection.
+- Support future modelling and implementation decisions.
+
+---
+
+# 3. Methodology Summary
+
+## Overview
+
+Time series forecasting methodologies use historical observations collected over time to estimate future activity levels. Different methodologies vary in complexity, interpretability, data requirements, and forecasting performance.
+
+The specific methodologies assessed within this report have not been provided.
+
+[INFORMATION NEEDED: List of forecasting methodologies reviewed or compared.]
+
+## Typical Methodological Considerations
+
+When assessing forecasting methodologies for paediatric demand and capacity data, the following factors are typically considered:
+
+### Data Characteristics
+- Presence of seasonality.
+- Long-term trend behaviour.
+- Missing or incomplete data.
+- Volatility and outliers.
+- Frequency of observations.
+- Structural breaks or policy changes.
+
+### Forecasting Requirements
+- Short-term versus long-term forecasting.
+- Operational versus strategic planning use cases.
+- Need for explainability and transparency.
+- Frequency of model refresh.
+
+### Performance Assessment
+
+Forecasting methodologies are commonly evaluated using validation approaches and error metrics.
+
+[INFORMATION NEEDED: Validation approach and performance metrics used in the analysis.]
+
+Examples of commonly used evaluation criteria may include:
+- Forecast accuracy.
+- Stability over time.
+- Interpretability.
+- Computational efficiency.
+- Ease of implementation and maintenance.
+
+## Assumptions
+
+The following assumptions have been made due to missing information:
+- The analysis concerns healthcare operational forecasting.
+- Historical paediatric demand and capacity data are available for model development and testing.
+- Multiple forecasting methodologies are being considered comparatively.
+
+---
+
+# 4. Key Findings
+
+The current inputs do not contain sufficient analytical outputs to present definitive findings.
+
+[INFORMATION NEEDED: Summary of comparative forecasting results, model performance outcomes, or analytical conclusions.]
+
+Based on the information available, the following high-level findings can be stated:
+
+- Time series forecasting methodologies are appropriate for modelling paediatric demand and capacity trends.
+- Selection of the most suitable methodology depends on both data characteristics and operational requirements.
+- Comparative validation is necessary before selecting a preferred forecasting approach.
+- Interpretability may be an important consideration where forecasts inform operational decision-making and executive reporting.
+
+[INFORMATION NEEDED: Any identified preferred methodology, rationale for selection, and supporting evidence.]
+
+---
+
+# 5. Limitations and Caveats
+
+This report is constrained by the limited information currently available.
+
+Key limitations include:
+
+- No paediatric dataset description has been provided.
+- No forecasting methodologies have been explicitly listed.
+- No validation metrics or model performance outputs have been supplied.
+- No forecast horizon has been defined.
+- No information has been provided regarding operational constraints or implementation requirements.
+- No information has been supplied regarding data quality, completeness, or historical coverage.
+
+These limitations prevent:
+- Quantitative comparison between methodologies.
+- Evidence-based recommendation of a preferred model.
+- Assessment of statistical robustness.
+- Evaluation of operational suitability.
+
+As a result, the report should be considered a preliminary analytical framework rather than a completed technical assessment.
+
+---
+
+# 6. Recommendations
+
+The following actions are recommended to support completion of the assessment:
+
+1. Define the forecasting objectives clearly, including:
+   - Operational versus strategic use cases.
+   - Required forecast horizons.
+   - Frequency of forecast refresh.
+
+2. Provide a detailed description of the paediatric demand and capacity datasets, including:
+   - Time coverage.
+   - Data frequency.
+   - Known data quality issues.
+   - Relevant external drivers.
+
+3. Identify the forecasting methodologies to be evaluated.
+
+4. Agree a standard validation framework and performance metrics.
+
+5. Conduct comparative testing across candidate methodologies using consistent evaluation criteria.
+
+6. Assess operational considerations alongside forecast accuracy, including:
+   - Interpretability.
+   - Ease of maintenance.
+   - Scalability.
+   - Computational requirements.
+
+---
+
+# 7. Appendix
+
+## Appendix A – Information Required to Complete the Assessment
+
+The following information is required to complete a full technical evaluation:
+
+- Forecasting methodologies under review.
+- Historical paediatric demand and capacity datasets.
+- Forecast horizons.
+- Validation methodology.
+- Performance metrics and results.
+- Operational requirements.
+- Implementation constraints.
+- Governance or assurance requirements.
+
+## Appendix B – Report Metadata
+
+| Item | Detail |
+|---|---|
+| Model Name | Time Series Forecasting methodologies |
+| Version | [INFORMATION NEEDED: Version number] |
+| Purpose | Which is the best methodology for use in paediatric demand and capacity data |
+| Audience | Technical and Executive |
+| Date | 12 May 2026 |
