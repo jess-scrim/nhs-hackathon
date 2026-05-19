@@ -1,0 +1,16 @@
+MAE:   151662.26
+RMSE:  217659.53
+MAPE:  291.81%
+R²:    0.2263
+
+Top 10 feature importances:
+rolling_6                                                                  0.131813
+rolling_3                                                                  0.117988
+lag_3                                                                      0.110516
+lag_12                                                                     0.103388
+lag_6                                                                      0.101524
+description_patients waiting less than 26 weeks (all stages of pathway)    0.092985
+lag_2                                                                      0.085183
+lag_1                                                                      0.084742
+source_file_rtt_patient_waiting_length.csv                                 0.074543
+year                                                                       0.043922
